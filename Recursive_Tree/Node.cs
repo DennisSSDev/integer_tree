@@ -8,18 +8,11 @@ namespace Recursive_Tree
 {
     class Node
     {
-        public int Data { get { return data; } set { data = value; } }
-        public Node Left { get; set; }
-        public Node Right { get; set; }
-        public Node Peer { get; set; }
-        private int data;
-        public Node(int data)
-        {
-            this.data = data;
-        }
-        public int DataValue()
-        {
-            return data;
-        }
+        public int nodeValue { get; set; }
+        public Node LeftChild { get; set; }
+        public Node RightChild { get; set; }
+        public int level { get; set; }
+        public Node LeftSibling { get; set; }
+        public Node RightSibling { get; set; }
     }
 }
